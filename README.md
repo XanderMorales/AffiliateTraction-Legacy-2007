@@ -6,5 +6,5 @@ This was part of the Kohana Framework... bits and pieces of it anyways... not al
 
 Just adding a little bit of legacy code to the history book.
 
-Project was the website with hooks into SugarCRM.
+Project was the custom built website with hooks into SugarCRM.
 
