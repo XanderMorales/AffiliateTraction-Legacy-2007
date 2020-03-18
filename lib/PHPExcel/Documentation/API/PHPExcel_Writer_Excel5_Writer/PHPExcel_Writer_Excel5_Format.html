@@ -1,0 +1,2290 @@
+<html>
+<head>
+<title>Docs For Class PHPExcel_Writer_Excel5_Format</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">PHPExcel_Writer_Excel5_Writer</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                                                                                                                                                                                                                                                                                        
+                                                  		  [ <a href="../classtrees_PHPExcel_Writer_Excel5_Writer.html" class="menu">class tree: PHPExcel_Writer_Excel5_Writer</a> ]
+		  [ <a href="../elementindex_PHPExcel_Writer_Excel5_Writer.html" class="menu">index: PHPExcel_Writer_Excel5_Writer</a> ]
+		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../li_default.html">default</a><br />
+              <a href="../li_OLE.html">OLE</a><br />
+              <a href="../li_PHPExcel.html">PHPExcel</a><br />
+              <a href="../li_PHPExcel_Calculation.html">PHPExcel_Calculation</a><br />
+              <a href="../li_PHPExcel_Cell.html">PHPExcel_Cell</a><br />
+              <a href="../li_PHPExcel_Reader.html">PHPExcel_Reader</a><br />
+              <a href="../li_PHPExcel_RichText.html">PHPExcel_RichText</a><br />
+              <a href="../li_PHPExcel_Shared.html">PHPExcel_Shared</a><br />
+              <a href="../li_PHPExcel_Shared_OLE.html">PHPExcel_Shared_OLE</a><br />
+              <a href="../li_PHPExcel_Style.html">PHPExcel_Style</a><br />
+              <a href="../li_PHPExcel_Worksheet.html">PHPExcel_Worksheet</a><br />
+              <a href="../li_PHPExcel_Worksheet_Drawing.html">PHPExcel_Worksheet_Drawing</a><br />
+              <a href="../li_PHPExcel_Writer.html">PHPExcel_Writer</a><br />
+              <a href="../li_PHPExcel_Writer_Excel5_Writer.html">PHPExcel_Writer_Excel5_Writer</a><br />
+              <a href="../li_PHPExcel_Writer_Excel2007.html">PHPExcel_Writer_Excel2007</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../PHPExcel_Writer_Excel5_Writer/_PHPExcel---Writer---Excel5---BIFFwriter.php.html">		BIFFwriter.php
+		</a><br>
+			<a href="../PHPExcel_Writer_Excel5_Writer/_PHPExcel---Writer---Excel5---Format.php.html">		Format.php
+		</a><br>
+			<a href="../PHPExcel_Writer_Excel5_Writer/_PHPExcel---Writer---Excel5---Parser.php.html">		Parser.php
+		</a><br>
+			<a href="../PHPExcel_Writer_Excel5_Writer/_PHPExcel---Writer---Excel5---Workbook.php.html">		Workbook.php
+		</a><br>
+			<a href="../PHPExcel_Writer_Excel5_Writer/_PHPExcel---Writer---Excel5---Worksheet.php.html">		Worksheet.php
+		</a><br>
+			<a href="../PHPExcel_Writer_Excel5_Writer/_PHPExcel---Writer---Excel5---Writer.php.html">		Writer.php
+		</a><br>
+	  </div><br />
+      
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_BIFFwriter.html">PHPExcel_Writer_Excel5_BIFFwriter</a><br />
+	    		<a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html">PHPExcel_Writer_Excel5_Format</a><br />
+	    		<a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Parser.html">PHPExcel_Writer_Excel5_Parser</a><br />
+	    		<a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Workbook.html">PHPExcel_Writer_Excel5_Workbook</a><br />
+	    		<a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Worksheet.html">PHPExcel_Writer_Excel5_Worksheet</a><br />
+	    		<a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Writer.html">PHPExcel_Writer_Excel5_Writer</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: PHPExcel_Writer_Excel5_Format</h1>
+Source Location: /PHPExcel/Writer/Excel5/Format.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">Class for generating Excel XF records (formats)</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+          <li>Xavier Noguer &lt;<a href="mailto:xnoguer@rezebra.com">xnoguer@rezebra.com</a>&gt;</li>
+      </ul>
+
+
+
+
+    
+
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$font_index">$font_index</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_bg_color">$_bg_color</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_bold">$_bold</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_bottom">$_bottom</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_bottom_color">$_bottom_color</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_color">$_color</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_fg_color">$_fg_color</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_font_charset">$_font_charset</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_font_family">$_font_family</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_font_name">$_font_name</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_font_outline">$_font_outline</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_font_script">$_font_script</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_font_shadow">$_font_shadow</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_font_strikeout">$_font_strikeout</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_hidden">$_hidden</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_italic">$_italic</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_left">$_left</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_left_color">$_left_color</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_locked">$_locked</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_num_format">$_num_format</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_pattern">$_pattern</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_right">$_right</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_right_color">$_right_color</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_rotation">$_rotation</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_size">$_size</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_text_h_align">$_text_h_align</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_text_justlast">$_text_justlast</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_text_v_align">$_text_v_align</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_text_wrap">$_text_wrap</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_top">$_top</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_top_color">$_top_color</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_underline">$_underline</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#var$_xf_index">$_xf_index</a></li>
+  </ul>
+</td>
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodPHPExcel_Writer_Excel5_Format">PHPExcel_Writer_Excel5_Format</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodgetFont">getFont</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodgetFontKey">getFontKey</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodgetXf">getXf</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodgetXfIndex">getXfIndex</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetAlign">setAlign</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetBgColor">setBgColor</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetBold">setBold</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetBorder">setBorder</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetBorderColor">setBorderColor</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetBottom">setBottom</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetBottomColor">setBottomColor</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetColor">setColor</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetFgColor">setFgColor</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetFontFamily">setFontFamily</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetHAlign">setHAlign</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetItalic">setItalic</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetLeft">setLeft</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetLeftColor">setLeftColor</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetLocked">setLocked</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetMerge">setMerge</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetNumFormat">setNumFormat</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetOutLine">setOutLine</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetPattern">setPattern</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetRight">setRight</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetRightColor">setRightColor</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetScript">setScript</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetShadow">setShadow</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetSize">setSize</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetStrikeOut">setStrikeOut</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetTextRotation">setTextRotation</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetTextWrap">setTextWrap</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetTop">setTop</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetTopColor">setTopColor</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetUnderline">setUnderline</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetUnLocked">setUnLocked</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#methodsetVAlign">setVAlign</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5_Writer/PHPExcel_Writer_Excel5_Format.html#method_getColor">_getColor</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a43">43</a>]<br />
+Class for generating Excel XF records (formats)<br /><br /><p>Class for generating Excel XF records (formats)</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Xavier Noguer &lt;<a href="mailto:xnoguer@rezebra.com">xnoguer@rezebra.com</a>&gt;</td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$font_index"></a>
+	<p></p>
+	<h4>$font_index = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a55">55</a>]</p>
+  Index to the FONT record.<br /><br /><p>Index to the FONT record.</p><br />
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_bg_color"></a>
+	<p></p>
+	<h4>$_bg_color = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a187">187</a>]</p>
+  The cell's background color.<br /><br /><p>The cell's background color.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_bold"></a>
+	<p></p>
+	<h4>$_bold = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a73">73</a>]</p>
+  Bold style<br /><br /><p>Bold style</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_bottom"></a>
+	<p></p>
+	<h4>$_bottom = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a199">199</a>]</p>
+  Style of the bottom border of the cell<br /><br /><p>Style of the bottom border of the cell</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_bottom_color"></a>
+	<p></p>
+	<h4>$_bottom_color = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a205">205</a>]</p>
+  Color of the bottom border of the cell.<br /><br /><p>Color of the bottom border of the cell.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_color"></a>
+	<p></p>
+	<h4>$_color = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a85">85</a>]</p>
+  Index to the cell's color<br /><br /><p>Index to the cell's color</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_fg_color"></a>
+	<p></p>
+	<h4>$_fg_color = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a181">181</a>]</p>
+  The cell's foreground color.<br /><br /><p>The cell's foreground color.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_font_charset"></a>
+	<p></p>
+	<h4>$_font_charset = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a127">127</a>]</p>
+  Byte specifiying the font charset.<br /><br /><p>Byte specifiying the font charset.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_font_family"></a>
+	<p></p>
+	<h4>$_font_family = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a121">121</a>]</p>
+  Byte specifiying the font family.<br /><br /><p>Byte specifiying the font family.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_font_name"></a>
+	<p></p>
+	<h4>$_font_name = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a61">61</a>]</p>
+  The font name (ASCII).<br /><br /><p>The font name (ASCII).</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_font_outline"></a>
+	<p></p>
+	<h4>$_font_outline = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a103">103</a>]</p>
+  Bit specifiying if the font has outline.<br /><br /><p>Bit specifiying if the font has outline.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_font_script"></a>
+	<p></p>
+	<h4>$_font_script = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a115">115</a>]</p>
+  2 bytes specifiying the script type for the font.<br /><br /><p>2 bytes specifiying the script type for the font.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_font_shadow"></a>
+	<p></p>
+	<h4>$_font_shadow = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a109">109</a>]</p>
+  Bit specifiying if the font has shadow.<br /><br /><p>Bit specifiying if the font has shadow.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_font_strikeout"></a>
+	<p></p>
+	<h4>$_font_strikeout = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a97">97</a>]</p>
+  Bit specifiying if the font has strikeout.<br /><br /><p>Bit specifiying if the font has strikeout.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_hidden"></a>
+	<p></p>
+	<h4>$_hidden = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a139">139</a>]</p>
+  Bit specifying if formulas are hidden.<br /><br /><p>Bit specifying if formulas are hidden.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_italic"></a>
+	<p></p>
+	<h4>$_italic = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a79">79</a>]</p>
+  Bit specifiying if the font is italic.<br /><br /><p>Bit specifiying if the font is italic.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_left"></a>
+	<p></p>
+	<h4>$_left = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a223">223</a>]</p>
+  Style of the left border of the cell<br /><br /><p>Style of the left border of the cell</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_left_color"></a>
+	<p></p>
+	<h4>$_left_color = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a229">229</a>]</p>
+  Color of the left border of the cell.<br /><br /><p>Color of the left border of the cell.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_locked"></a>
+	<p></p>
+	<h4>$_locked = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a145">145</a>]</p>
+  Bit specifying if the cell is locked.<br /><br /><p>Bit specifying if the cell is locked.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_num_format"></a>
+	<p></p>
+	<h4>$_num_format = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a133">133</a>]</p>
+  An index (2 bytes) to a FORMAT record (number format).<br /><br /><p>An index (2 bytes) to a FORMAT record (number format).</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_pattern"></a>
+	<p></p>
+	<h4>$_pattern = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a193">193</a>]</p>
+  The cell's background fill pattern.<br /><br /><p>The cell's background fill pattern.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_right"></a>
+	<p></p>
+	<h4>$_right = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a235">235</a>]</p>
+  Style of the right border of the cell<br /><br /><p>Style of the right border of the cell</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_right_color"></a>
+	<p></p>
+	<h4>$_right_color = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a241">241</a>]</p>
+  Color of the right border of the cell.<br /><br /><p>Color of the right border of the cell.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_rotation"></a>
+	<p></p>
+	<h4>$_rotation = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a175">175</a>]</p>
+  The two bits specifying the text rotation.<br /><br /><p>The two bits specifying the text rotation.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_size"></a>
+	<p></p>
+	<h4>$_size = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a67">67</a>]</p>
+  Height of font (1/20 of a point)<br /><br /><p>Height of font (1/20 of a point)</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_text_h_align"></a>
+	<p></p>
+	<h4>$_text_h_align = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a151">151</a>]</p>
+  The three bits specifying the text horizontal alignment.<br /><br /><p>The three bits specifying the text horizontal alignment.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_text_justlast"></a>
+	<p></p>
+	<h4>$_text_justlast = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a169">169</a>]</p>
+  1 bit, apparently not used.<br /><br /><p>1 bit, apparently not used.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_text_v_align"></a>
+	<p></p>
+	<h4>$_text_v_align = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a163">163</a>]</p>
+  The three bits specifying the text vertical alignment.<br /><br /><p>The three bits specifying the text vertical alignment.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_text_wrap"></a>
+	<p></p>
+	<h4>$_text_wrap = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a157">157</a>]</p>
+  Bit specifying if the text is wrapped at the right border.<br /><br /><p>Bit specifying if the text is wrapped at the right border.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_top"></a>
+	<p></p>
+	<h4>$_top = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a211">211</a>]</p>
+  Style of the top border of the cell<br /><br /><p>Style of the top border of the cell</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_top_color"></a>
+	<p></p>
+	<h4>$_top_color = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a217">217</a>]</p>
+  Color of the top border of the cell.<br /><br /><p>Color of the top border of the cell.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_underline"></a>
+	<p></p>
+	<h4>$_underline = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a91">91</a>]</p>
+  The text underline property<br /><br /><p>The text underline property</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_xf_index"></a>
+	<p></p>
+	<h4>$_xf_index = <span class="value"></span></h4>
+	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a49">49</a>]</p>
+  The index given by the workbook when creating a new format.<br /><br /><p>The index given by the workbook when creating a new format.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="methodPHPExcel_Writer_Excel5_Format"></a>
+	<h3>constructor PHPExcel_Writer_Excel5_Format <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a250">250</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>PHPExcel_Writer_Excel5_Format PHPExcel_Writer_Excel5_Format(
+
+$BIFF_version, [integer
+$index = 0], [array
+$properties = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor<br /><br /><p>Constructor</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$index</b>&nbsp;&nbsp;</td>
+        <td>the XF index for the format.</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$properties</b>&nbsp;&nbsp;</td>
+        <td>array with properties to be set on initialization.</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$BIFF_version</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetFont"></a>
+	<h3>method getFont <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a445">445</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getFont(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Generate an Excel BIFF FONT record.<br /><br /><p>Generate an Excel BIFF FONT record.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The FONT record</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetFontKey"></a>
+	<h3>method getFontKey <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a501">501</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getFontKey(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns a unique hash key for a font.<br /><br /><p>Returns a unique hash key for a font. Used by PHPExcel_Writer_Excel5_Workbook::_storeAllFonts()
+ The elements that form the key are arranged to increase the probability of generating a unique key. Elements that hold a large range of numbers (eg. _color) are placed between two binary elements such as _italic</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A key for this font</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetXf"></a>
+	<h3>method getXf <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a313">313</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getXf(
+string
+$style)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Generate an Excel BIFF XF record (style or cell).<br /><br /><p>Generate an Excel BIFF XF record (style or cell).</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The XF record</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$style</b>&nbsp;&nbsp;</td>
+        <td>The type of the XF record ('style' or 'cell').</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetXfIndex"></a>
+	<h3>method getXfIndex <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a517">517</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>integer getXfIndex(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the index used by PHPExcel_Writer_Excel5_Worksheet::_XF()<br /><br /><p>Returns the index used by PHPExcel_Writer_Excel5_Worksheet::_XF()</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The index for the XF record</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetAlign"></a>
+	<h3>method setAlign <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a589">589</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setAlign(
+string
+$location)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set cell alignment.<br /><br /><p>Set cell alignment.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$location</b>&nbsp;&nbsp;</td>
+        <td>alignment for the cell ('left', 'right', etc...).</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetBgColor"></a>
+	<h3>method setBgColor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a906">906</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setBgColor(
+mixed
+$color)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the cell's background color<br /><br /><p>Sets the cell's background color</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$color</b>&nbsp;&nbsp;</td>
+        <td>either a string (like 'blue'), or an integer (range is [8...63]).</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetBold"></a>
+	<h3>method setBold <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a735">735</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setBold(
+[integer
+$weight = 1])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the boldness of the text.<br /><br /><p>Sets the boldness of the text. Bold has a range 100..1000.<ol><li>(400) is normal. 1 (700) is bold.</li></ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$weight</b>&nbsp;&nbsp;</td>
+        <td>Weight for the text, 0 maps to 400 (normal text),</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetBorder"></a>
+	<h3>method setBorder <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a808">808</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setBorder(
+integer
+$style)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set cells borders to the same style<br /><br /><p>Set cells borders to the same style</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$style</b>&nbsp;&nbsp;</td>
+        <td>style to apply for all cell borders. 1 =&gt; thin, 2 =&gt; thick.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetBorderColor"></a>
+	<h3>method setBorderColor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a828">828</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setBorderColor(
+mixed
+$color)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets all the cell's borders to the same color<br /><br /><p>Sets all the cell's borders to the same color</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$color</b>&nbsp;&nbsp;</td>
+        <td>The color we are setting. Either a string (like 'blue'),                     or an integer (range is [8...63]).</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetBottom"></a>
+	<h3>method setBottom <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a763">763</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setBottom(
+integer
+$style)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the width for the bottom border of the cell<br /><br /><p>Sets the width for the bottom border of the cell</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$style</b>&nbsp;&nbsp;</td>
+        <td>style of the cell border. 1 =&gt; thin, 2 =&gt; thick.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetBottomColor"></a>
+	<h3>method setBottomColor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a842">842</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setBottomColor(
+mixed
+$color)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the cell's bottom border color<br /><br /><p>Sets the cell's bottom border color</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$color</b>&nbsp;&nbsp;</td>
+        <td>either a string (like 'blue'), or an integer (range is [8...63]).</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetColor"></a>
+	<h3>method setColor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a921">921</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setColor(
+mixed
+$color)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the cell's color<br /><br /><p>Sets the cell's color</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$color</b>&nbsp;&nbsp;</td>
+        <td>either a string (like 'blue'), or an integer (range is [8...63]).</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetFgColor"></a>
+	<h3>method setFgColor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a891">891</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setFgColor(
+mixed
+$color)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the cell's foreground color<br /><br /><p>Sets the cell's foreground color</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$color</b>&nbsp;&nbsp;</td>
+        <td>either a string (like 'blue'), or an integer (range is [8...63]).</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetFontFamily"></a>
+	<h3>method setFontFamily <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a1095">1095</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setFontFamily(
+
+$font_family, string
+$fontfamily)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the font family name.<br /><br /><p>Sets the font family name.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$fontfamily</b>&nbsp;&nbsp;</td>
+        <td>The font family name. Possible values are:                           'Times New Roman', 'Arial', 'Courier'.</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$font_family</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetHAlign"></a>
+	<h3>method setHAlign <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a647">647</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setHAlign(
+string
+$location)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set cell horizontal alignment.<br /><br /><p>Set cell horizontal alignment.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$location</b>&nbsp;&nbsp;</td>
+        <td>alignment for the cell ('left', 'right', etc...).</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetItalic"></a>
+	<h3>method setItalic <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a956">956</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setItalic(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the font style as italic<br /><br /><p>Sets the font style as italic</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetLeft"></a>
+	<h3>method setLeft <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a785">785</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setLeft(
+integer
+$style)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the width for the left border of the cell<br /><br /><p>Sets the width for the left border of the cell</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$style</b>&nbsp;&nbsp;</td>
+        <td>style of the cell left border. 1 =&gt; thin, 2 =&gt; thick.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetLeftColor"></a>
+	<h3>method setLeftColor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a866">866</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setLeftColor(
+mixed
+$color)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the cell's left border color<br /><br /><p>Sets the cell's left border color</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$color</b>&nbsp;&nbsp;</td>
+        <td>either a string (like 'blue'), or an integer (range is [8...63]).</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetLocked"></a>
+	<h3>method setLocked <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a1073">1073</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setLocked(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Locks a cell.<br /><br /><p>Locks a cell.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetMerge"></a>
+	<h3>method setMerge <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a720">720</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setMerge(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		This is an alias for the unintuitive setAlign('merge')<br /><br /><p>This is an alias for the unintuitive setAlign('merge')</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetNumFormat"></a>
+	<h3>method setNumFormat <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a1021">1021</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setNumFormat(
+integer
+$num_format)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the numeric format.<br /><br /><p>Sets the numeric format. It can be date, time, currency, etc...</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$num_format</b>&nbsp;&nbsp;</td>
+        <td>The numeric format.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetOutLine"></a>
+	<h3>method setOutLine <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a1041">1041</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setOutLine(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets outlining for a font.<br /><br /><p>Sets outlining for a font.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetPattern"></a>
+	<h3>method setPattern <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a934">934</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setPattern(
+[integer
+$arg = 1])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the fill pattern attribute of a cell<br /><br /><p>Sets the fill pattern attribute of a cell</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$arg</b>&nbsp;&nbsp;</td>
+        <td>Optional. Defaults to 1. Meaningful values are: 0-18,<ol><li>meaning no background.</li></ol></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetRight"></a>
+	<h3>method setRight <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a796">796</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setRight(
+integer
+$style)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the width for the right border of the cell<br /><br /><p>Sets the width for the right border of the cell</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$style</b>&nbsp;&nbsp;</td>
+        <td>style of the cell right border. 1 =&gt; thin, 2 =&gt; thick.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetRightColor"></a>
+	<h3>method setRightColor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a878">878</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setRightColor(
+mixed
+$color)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the cell's right border color<br /><br /><p>Sets the cell's right border color</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$color</b>&nbsp;&nbsp;</td>
+        <td>either a string (like 'blue'), or an integer (range is [8...63]).</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetScript"></a>
+	<h3>method setScript <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a1063">1063</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setScript(
+integer
+$script)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the script type of the text<br /><br /><p>Sets the script type of the text</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$script</b>&nbsp;&nbsp;</td>
+        <td>The value for script type. Possible values are:<ol><li>=&gt; superscript, 2 =&gt; subscript.</li></ol></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetShadow"></a>
+	<h3>method setShadow <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a1051">1051</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setShadow(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets font as shadow.<br /><br /><p>Sets font as shadow.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetSize"></a>
+	<h3>method setSize <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a967">967</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setSize(
+integer
+$size)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the font size<br /><br /><p>Sets the font size</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$size</b>&nbsp;&nbsp;</td>
+        <td>The font size (in pixels I think).</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetStrikeOut"></a>
+	<h3>method setStrikeOut <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a1031">1031</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setStrikeOut(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets font as strikeout.<br /><br /><p>Sets font as strikeout.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetTextRotation"></a>
+	<h3>method setTextRotation <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a989">989</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setTextRotation(
+integer
+$angle)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the orientation of the text<br /><br /><p>Sets the orientation of the text</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$angle</b>&nbsp;&nbsp;</td>
+        <td>The rotation angle for the text (clockwise). Possible</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetTextWrap"></a>
+	<h3>method setTextWrap <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a977">977</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setTextWrap(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets text wrapping<br /><br /><p>Sets text wrapping</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetTop"></a>
+	<h3>method setTop <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a774">774</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setTop(
+integer
+$style)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the width for the top border of the cell<br /><br /><p>Sets the width for the top border of the cell</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$style</b>&nbsp;&nbsp;</td>
+        <td>style of the cell top border. 1 =&gt; thin, 2 =&gt; thick.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetTopColor"></a>
+	<h3>method setTopColor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a854">854</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setTopColor(
+mixed
+$color)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the cell's top border color<br /><br /><p>Sets the cell's top border color</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$color</b>&nbsp;&nbsp;</td>
+        <td>either a string (like 'blue'), or an integer (range is [8...63]).</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetUnderline"></a>
+	<h3>method setUnderline <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a946">946</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setUnderline(
+integer
+$underline)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the underline of the text<br /><br /><p>Sets the underline of the text</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$underline</b>&nbsp;&nbsp;</td>
+        <td>The value for underline. Possible values are:<ol><li>=&gt; underline, 2 =&gt; double underline.</li></ol></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetUnLocked"></a>
+	<h3>method setUnLocked <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a1083">1083</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setUnLocked(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Unlocks a cell.<br /><br /><p>Unlocks a cell. Useful for unprotecting particular cells of a protected sheet.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetVAlign"></a>
+	<h3>method setVAlign <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a687">687</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setVAlign(
+string
+$location)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set cell vertical alignment.<br /><br /><p>Set cell vertical alignment.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$location</b>&nbsp;&nbsp;</td>
+        <td>alignment for the cell ('top', 'vleft', 'vright', etc...).</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method_getColor"></a>
+	<h3>method _getColor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5_Writer__PHPExcelWriterExcel5Format.php.html#a531">531</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>integer _getColor(
+[string
+$name_color = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Used in conjunction with the set_xxx_color methods to convert a color string into a number. to 8.<br /><br /><p>Used in conjunction with the set_xxx_color methods to convert a color string into a number. Color range is 0..63 but we will restrict it to 8..63 to comply with Gnumeric. Colors 0..7 are repeated in 8..15.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The color index</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$name_color</b>&nbsp;&nbsp;</td>
+        <td>name of the color (i.e.: 'blue', 'red', etc..). Optional.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Mon, 23 Jun 2008 13:30:16 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
